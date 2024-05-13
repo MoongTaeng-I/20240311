@@ -20,8 +20,18 @@
         // alert('안녕 $(admin)');
         let result = prompt("나이를 입력 : ");
         alert('당신의 나이는 ${result}살 입니다');
+        if (result >= 15){
+          alert("어서오세요");
+        } else{
+          alert("가세요");
+        }
         result = confirm("당신이 주인인가요");
-        alert(result);
+        if (result){
+          alert("네");
+        } else{
+          alert("X");
+        }
+
     </script>
   </body>
 </html>
