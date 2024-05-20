@@ -5,33 +5,63 @@
     <title>내 홈페이지</title>
   </head>
   <body>
-    <div>
-        <h1>내 홈페이지 연습</h1>
-    </div>
-    <hr color="red" size="15">
-    <h1>입력 필드를 만든다</h1>
-    <script>
-        alert('hello');
-        console.log("hello");
-        let name = "뭉탱이";
-        let admin;
-        admin = name;
-        // alert ("안녕" + admin);
-        // alert('안녕 $(admin)');
-        let result = prompt("나이를 입력 : ");
-        alert('당신의 나이는 ${result}살 입니다');
-        if (result >= 15){
-          alert("어서오세요");
-        } else{
-          alert("가세요");
-        }
-        result = confirm("당신이 주인인가요");
-        if (result){
-          alert("네");
-        } else{
-          alert("X");
-        }
+    <h1>내 홈페이지</h1>
+    <hr color="purple" size="10">
+    <h2>여기에 내 홈페이지가 제작될 예정</h2>
 
+    <script>
+  
+        console.log("Hello, world!");
+     
+       let name1 = "도라에몽";  
+       let admin;  
+       admin = name1;  
+ 
+       let name = prompt("이름 입력: ");
+   
+       let age = prompt("나이를 입력: ");
+
+       let isSt = confirm("당신은 학생?");
+       let st = ""; 
+       if (!isSt) {
+        alert("너는 누구냐~");
+       }
+       if (age >= 8 && age <= 13) {
+        st = "초등학생";
+       } else if (age >= 14 && age <= 16) {
+        st = "중학생";
+       } else if (age >= 17 && age <= 19) {
+        st = "고등학생";
+       } else if (age >= 20) {
+        st = "성인";
+       } else {
+        st = "아기에요~";
+       }
+
+
+       alert(`이름은 ${name} 나이는 ${age}살 ${st}입니다.`);
+
+      //  let result = prompt("나이를 입력: ");
+      //  alert(`당신의 나이는 ${result}살 입니다.`);
+      //  // 만약에 15세이상만 입장가능
+      //  if (result >= 15) {
+      //   alert("어서오세요~");
+      //  } else {
+      //   alert("가세요~");
+      //  }
+       // 15세이하는 가라~
+
+      //  result = confirm("당신이 주인인가요?");
+      //  // result 의 값은? true 또는 false
+      //  //alert(result);
+      //  if (result) {  // 만약에 true 이면
+      //   alert("네 주인님~ 어서오세요! 무엇을 도와 드릴까요?");
+      //  } else { // 아니면
+      //   alert("꺼져~");
+      //  }
+       
     </script>
+    // <a href="mainpage.html" target="blank">메인페이지</a>
+
   </body>
 </html>
